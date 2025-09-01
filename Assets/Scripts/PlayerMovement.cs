@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     // Color changer reference
     public PlayerColorChanger colorChanger;
+    public static Action playerJumped;
 
     // Fast fall variables
     public float fastFallGravityScale;
@@ -28,14 +30,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // Player horizontal movement
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+        // Player jump
         if (jumpAction.WasPressedThisFrame() && IsGrounded())
         {
+            playerJumped?.Invoke();
             colorChanger.ToggleColor();
             rb.AddForce(new Vector2(0, 10f), ForceMode2D.Impulse);
         }
-
-        Vector2 moveInput = moveAction.ReadValue<Vector2>();
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
         // Adjust gravity scale for fast fall
         if (!IsGrounded() && moveInput.y < -0.5f)
