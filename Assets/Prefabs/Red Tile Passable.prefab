@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4498504361748027789}
   - component: {fileID: 1968587647209302248}
   - component: {fileID: 3568563509929077869}
+  - component: {fileID: 1591025955365824828}
   m_Layer: 0
   m_Name: Red Tile Passable
   m_TagString: Untagged
@@ -168,3 +169,15 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1591025955365824828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220888103141964781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f11daa267460948985ef3a11e93ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
