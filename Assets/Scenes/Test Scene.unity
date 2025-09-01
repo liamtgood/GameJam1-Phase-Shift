@@ -119,64 +119,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &487135821
-PrefabInstance:
+--- !u!1 &431367911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+  m_PrefabInstance: {fileID: 718399441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &431367917
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.010626435
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.5068767
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243452993093009970, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_Name
-      value: Blue Tile Passable
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
---- !u!1001 &523629183
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431367911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4e1c03320f55547ba29882191c2a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &718399441
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -186,11 +146,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.313912
+      value: 0.14037588
       objectReference: {fileID: 0}
     - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.40282488
+      value: 0.28573418
       objectReference: {fileID: 0}
     - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -226,184 +186,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
       propertyPath: m_Name
-      value: Red Tile Passable (2)
+      value: Red Tile Passable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 431367917}
   m_SourcePrefab: {fileID: 100100000, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
---- !u!1001 &630841715
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243452993093009970, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_Name
-      value: Blue Tile Passable (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
---- !u!1001 &669057500
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_Name
-      value: Red Tile Passable (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
---- !u!1001 &811127003
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.0892897
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.40282488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243452993093009970, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_Name
-      value: Blue Tile Passable (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
 --- !u!1 &1081558316
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +367,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1677669986
+--- !u!1001 &1603576247
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -583,180 +375,60 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.010626435
+      value: 0.48542935
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.40167427
+      value: 3.070809
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 4749435331708006992, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
+    - target: {fileID: 7243452993093009970, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
       propertyPath: m_Name
-      value: Red Tile Passable
+      value: Blue Tile  passable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
---- !u!1001 &1780654048
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.948571
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.40282488
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8773054255706820549, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9220888103141964781, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
-      propertyPath: m_Name
-      value: Red Tile Passable (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 14bd5a8605d492e409b0c0e90d7f057d, type: 3}
---- !u!1001 &1974978056
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.2482915
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.40282488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749435331708006992, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243452993093009970, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
-      propertyPath: m_Name
-      value: Blue Tile Passable (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a858a328a736141a9f23ee14ad3523, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: d75a9ba18b056bd4b9343cff33bf95d2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1081558319}
   - {fileID: 1406498533}
-  - {fileID: 487135821}
-  - {fileID: 1677669986}
-  - {fileID: 669057500}
-  - {fileID: 630841715}
-  - {fileID: 811127003}
-  - {fileID: 1974978056}
-  - {fileID: 523629183}
-  - {fileID: 1780654048}
+  - {fileID: 718399441}
+  - {fileID: 1603576247}
