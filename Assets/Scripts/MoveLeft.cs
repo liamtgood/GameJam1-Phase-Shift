@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private makeInvisible platformPhaseState;
+
+    public void Awake()
     {
-        
+        platformPhaseState = GetComponent<makeInvisible>();
     }
     public float speed = 2f;
     // Update is called once per frame
     void Update()
     {
+        // if the platform is visible, do not move it
+        if (platformPhaseState.isOn == true)
+        {
+            return;
+        }
+  
         //moves tile left
         transform.Translate(Vector3.left * speed * Time.deltaTime);
         //gets the left and right edges of camera view

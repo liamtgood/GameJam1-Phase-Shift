@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8773054255706820549}
   - component: {fileID: 7815142133876642221}
+  - component: {fileID: -7615818732585998275}
   - component: {fileID: 4498504361748027789}
   - component: {fileID: 1968587647209302248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Red Tile Not Passable
-  m_TagString: Untagged
+  m_TagString: GroupBPlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,6 +90,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7615818732585998275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220888103141964781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4e1c03320f55547ba29882191c2a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!61 &4498504361748027789
 BoxCollider2D:
   m_ObjectHideFlags: 0
