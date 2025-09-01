@@ -11,10 +11,20 @@ public class makeInvisible : MonoBehaviour
 
     void shiftPhase()
     {
-        Color color = GetComponent<Renderer>().material.color;
-        color.a = 0.3f;
-        GetComponent<Renderer>().material.color = color;
-        GetComponent<BoxCollider2D>().enabled = false;
+        if (GetComponent<BoxCollider2D>().enabled == true)
+        {
+            Color color = GetComponent<Renderer>().material.color;
+            color.a = 0.3f;
+            GetComponent<Renderer>().material.color = color;
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
+        else
+        {
+            Color color = GetComponent<Renderer>().material.color;
+            color.a = 1f;
+            GetComponent<Renderer>().material.color = color;
+            GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
 
 
