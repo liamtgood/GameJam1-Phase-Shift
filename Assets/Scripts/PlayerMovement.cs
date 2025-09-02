@@ -98,6 +98,6 @@ public class PlayerMovement : MonoBehaviour
     public void ResetPlayerPosition()
     {
         this.transform.position = new Vector3(0, 0, 0);
-        this.rb.linearVelocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
     }
 }
