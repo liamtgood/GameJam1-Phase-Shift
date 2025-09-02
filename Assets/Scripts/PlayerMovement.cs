@@ -42,12 +42,19 @@ public class PlayerMovement : MonoBehaviour
         // set direction player character is facing
         playerSprite.flipX = moveInput.x < 0;
 
+        // if grounded and animation is set to jumping, set it back to normal
+        if(IsGrounded() && playerAnimator.GetBool("IsJumping"))
+        {
+            playerAnimator.SetBool("IsJumping", false);
+        }
+
         // Player jump
         if (jumpAction.WasPressedThisFrame() && IsGrounded())
         {
             playerJumped?.Invoke();
 
             // set animation to jump
+            playerAnimator.SetBool("IsJumping", true);
 
             colorChanger.ToggleColor();
             rb.AddForce(new Vector2(0, 10f), ForceMode2D.Impulse);
