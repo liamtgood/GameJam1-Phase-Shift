@@ -29,6 +29,7 @@ public class PlayerColorChanger : MonoBehaviour
 
     public void ToggleColor()
     {
+        
         if (isColor1)
         {
             //sr.color = color2;

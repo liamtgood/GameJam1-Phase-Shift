@@ -20,7 +20,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     // Input actions
     private InputAction jumpAction, moveAction;
-
+    //audio for phase shift
+    public AudioClip phaseShift;  
+    private AudioSource audioSource;
+    
     [Header("Animation-related")]
     [SerializeField] float mvmtRangeToAnim;// the range (negative value is lower end) for which player input values should result in a walking animation
     [SerializeField] Animator playerAnimator;
@@ -31,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         jumpAction = InputSystem.actions.FindAction("Jump");
         moveAction = InputSystem.actions.FindAction("Move");
+        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -58,11 +63,15 @@ public class PlayerMovement : MonoBehaviour
 
             colorChanger.ToggleColor();
             rb.AddForce(new Vector2(0, 10f), ForceMode2D.Impulse);
-        } else if (moveInput.x > mvmtRangeToAnim || moveInput.x < -mvmtRangeToAnim)
+            //play phase shift sound when player jumps
+            audioSource.PlayOneShot(phaseShift);
+        }
+        else if (moveInput.x > mvmtRangeToAnim || moveInput.x < -mvmtRangeToAnim)
         {
             // set animation to walking
             playerAnimator.SetBool("IsWalking", true);
-        } else
+        }
+        else
         {
             playerAnimator.SetBool("IsWalking", false);
         }
