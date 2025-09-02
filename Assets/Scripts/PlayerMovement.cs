@@ -85,4 +85,9 @@ public class PlayerMovement : MonoBehaviour
         Collider2D hit = Physics2D.OverlapBox(groundCheck.position, boxSize, 0f, groundLayer);
         return hit != null;
     }
+
+    public void ResetPlayerPosition()
+    {
+        this.transform.position = new Vector3(0, 0, 0);
+    }
 }

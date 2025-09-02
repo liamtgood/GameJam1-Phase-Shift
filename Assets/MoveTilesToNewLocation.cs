@@ -16,7 +16,7 @@ public class MoveTilesToNewLocation : MonoBehaviour
         //move the tiles Y value to +20 the camera value
         int randomX = Random.Range(-6, 6);
         int randomTileCountValue = Random.Range(1, 10);
-        if (transform.position.y < Camera.main.transform.position.y - 10)
+        if (transform.position.y < Camera.main.transform.position.y - 20)
         {   
             // 10% chance to not spawn any tiles
             if (randomTileCountValue == 1)
@@ -40,7 +40,7 @@ public class MoveTilesToNewLocation : MonoBehaviour
 
     public void SpawnNewTile(int randomX)
     {
-        GameObject newTile = Instantiate(tilePrefab, new Vector3(randomX * 5, Camera.main.transform.position.y + 20, transform.position.z), Quaternion.identity);
+        GameObject newTile = Instantiate(tilePrefab, new Vector3(randomX * 5, Camera.main.transform.position.y + 10, transform.position.z), Quaternion.identity);
         makeInvisible newTilePhaseState = newTile.GetComponent<makeInvisible>();
         if (platformPhaseState.isOn)
         {

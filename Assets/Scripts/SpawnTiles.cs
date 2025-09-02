@@ -7,9 +7,9 @@ public class SpawnTiles : MonoBehaviour
     public GameObject redTilePrefab;
     public GameObject blueTilePrefab;
 
-    void Start()
-    {
 
+    public void SpawnAllTiles()
+    {
         //spawn in a large group of tiles above the player at random x positions between -7 and 7 and 
         // incremented y positions of 2, spawn in 3-4 tiles per row, maybe have a 
         // standalone script for this
@@ -26,7 +26,7 @@ public class SpawnTiles : MonoBehaviour
                 //spawns in the tiles
                 for (int j = 0; j < numberOfTiles; j++)
                 {
-                    Instantiate(blueTilePrefab, new Vector3(randomX + j * 5, 3 * i + 4, 0), Quaternion.identity);
+                    Instantiate(blueTilePrefab, new Vector3(randomX + j * 5, 3 * i + 2, 0), Quaternion.identity);
                 }
             }
             else
@@ -37,18 +37,25 @@ public class SpawnTiles : MonoBehaviour
                 //spawns in the tiles
                 for (int j = 0; j < numberOfTiles; j++)
                 {
-                    Instantiate(redTilePrefab, new Vector3(randomX + j * 5, 3 * i + 4, 0), Quaternion.identity);
+                    Instantiate(redTilePrefab, new Vector3(randomX + j * 5, 3 * i + 2, 0), Quaternion.identity);
                 }
 
             }
             isBlue = !isBlue;
         }
-
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ClearAllTiles()
     {
-        
+        GameObject[] groupATiles = GameObject.FindGameObjectsWithTag("GroupAPlatforms");
+        GameObject[] groupBTiles = GameObject.FindGameObjectsWithTag("GroupBPlatforms");
+        foreach (GameObject tile in groupATiles)
+        {
+            Destroy(tile);
+        }
+        foreach (GameObject tile in groupBTiles)
+        {
+            Destroy(tile);
+        }
     }
 }
