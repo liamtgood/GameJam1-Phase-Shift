@@ -4,6 +4,8 @@ public class MenuManager : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerMvmt;
 
+    TextMesh scoreText;
+
     // enable/disable player movement when this is called
     public void setPlayerCanMove(bool canMove)
     {
