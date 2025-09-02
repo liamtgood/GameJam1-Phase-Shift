@@ -16,7 +16,7 @@ public class MoveRIght : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speedModifier = 1 + (scoreCounter.GetScore() / 100f);
+        speedModifier = 1 + (scoreCounter.GetScore() / 60f);
 
         // if the platform is visible, do not move it
         if (platformPhaseState.isOn == true)
