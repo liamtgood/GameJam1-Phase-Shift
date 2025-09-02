@@ -3,16 +3,21 @@ using UnityEngine;
 public class MoveRIght : MonoBehaviour
 {
     private makeInvisible platformPhaseState;
+    private PlayerScoreCounter scoreCounter;
 
     public void Awake()
     {
         platformPhaseState = GetComponent<makeInvisible>();
+        scoreCounter = FindFirstObjectByType<PlayerScoreCounter>();
     }
 
     public float speed = 2f;
+    public float speedModifier = 1f;
     // Update is called once per frame
     void Update()
     {
+        speedModifier = 1 + (scoreCounter.GetScore() / 100f);
+
         // if the platform is visible, do not move it
         if (platformPhaseState.isOn == true)
         {
@@ -20,7 +25,7 @@ public class MoveRIght : MonoBehaviour
         }
 
         //moves the object to the right
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * speedModifier * Time.deltaTime);
 
         //gets camera boundries
         float leftEdge = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
