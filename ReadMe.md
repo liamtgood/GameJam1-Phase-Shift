@@ -2,6 +2,9 @@
 Author: SLOB Studios
 
 This is a small game created as the result of a game jam. We were given a week and the topic "Phase Shift", and came to the idea of a sort of platformer, but with the twist of changing colors and platforms that adds new levels of difficulty.
+# Game Build
+This is where a build of the game will be
+https://owenlarmon.itch.io/phase-shift-game-jam
 
 ## External Assets:
 #### Sound Assets:
