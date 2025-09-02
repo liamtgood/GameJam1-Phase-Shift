@@ -1,10 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerMvmt;
 
-    TextMesh scoreText;
+    public TextMeshProUGUI scoreText; 
+    public PlayerScoreCounter scoreCounter;
+
+    public void Update()
+    {
+        scoreText.text = scoreCounter.GetScore().ToString();
+    }
 
     // enable/disable player movement when this is called
     public void setPlayerCanMove(bool canMove)
