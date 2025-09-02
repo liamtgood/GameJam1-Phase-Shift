@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7615818732585998275}
   - component: {fileID: 4498504361748027789}
   - component: {fileID: 1968587647209302248}
+  - component: {fileID: 2987754987702376922}
   m_Layer: 8
   m_Name: Red Tile Not Passable
   m_TagString: GroupBPlatforms
@@ -162,3 +163,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &2987754987702376922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220888103141964781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f11daa267460948985ef3a11e93ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 9220888103141964781}

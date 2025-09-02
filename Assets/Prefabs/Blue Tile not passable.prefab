@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5494797694693899365}
   - component: {fileID: 5448179299918274212}
   - component: {fileID: 3963296317753049613}
+  - component: {fileID: 7055337913894678613}
   m_Layer: 8
   m_Name: Blue Tile not passable
   m_TagString: GroupAPlatforms
@@ -162,3 +163,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &7055337913894678613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243452993093009970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f11daa267460948985ef3a11e93ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 7243452993093009970}

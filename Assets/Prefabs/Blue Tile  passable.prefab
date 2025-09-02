@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3963296317753049613}
   - component: {fileID: -4151973204734621290}
   - component: {fileID: -3715470576993457450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blue Tile  passable
   m_TagString: GroupAPlatforms
   m_Icon: {fileID: 0}
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4e1c03320f55547ba29882191c2a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!114 &3963296317753049613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,3 +195,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f11daa267460948985ef3a11e93ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 7243452993093009970}
