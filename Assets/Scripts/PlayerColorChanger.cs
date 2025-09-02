@@ -27,6 +27,12 @@ public class PlayerColorChanger : MonoBehaviour
         // }
     }
 
+    public void ResetColor()
+    {
+        colorSwitchingMat.SetColor("_TargetColor", color1);
+        isColor1 = true;
+    }
+
     public void ToggleColor()
     {
         if (isColor1)
