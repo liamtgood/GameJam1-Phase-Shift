@@ -26,7 +26,7 @@ public class SpawnTiles : MonoBehaviour
                 //spawns in the tiles
                 for (int j = 0; j < numberOfTiles; j++)
                 {
-                    Instantiate(blueTilePrefab, new Vector3(randomX + j * 5, 3 * i + 1, 0), Quaternion.identity);
+                    Instantiate(blueTilePrefab, new Vector3(randomX + j * 5, 3 * i + 4, 0), Quaternion.identity);
                 }
             }
             else
@@ -37,7 +37,7 @@ public class SpawnTiles : MonoBehaviour
                 //spawns in the tiles
                 for (int j = 0; j < numberOfTiles; j++)
                 {
-                    Instantiate(redTilePrefab, new Vector3(randomX + j * 5, 3 * i + 1, 0), Quaternion.identity);
+                    Instantiate(redTilePrefab, new Vector3(randomX + j * 5, 3 * i + 4, 0), Quaternion.identity);
                 }
 
             }
